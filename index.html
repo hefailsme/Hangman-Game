@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web" rel="stylesheet">
+    <title>Classic 80's Hangman</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+            
+                <audio class="audio-win" source src="./assets/audio/star-wars-theme-song.mp3" type="audio/mpeg"></audio>
+                <audio class="audio-lose"source src="./assets/audio/imperial_march.mp3" type="audio/mpeg"></audio>
+
+	<div class="container">
+		<div class="jumbotron">
+            <img src="./assets/images/coming-to-america.jpg" alt="HTML5 Icon" style="width:100%;height:200px;">
+            <div id="heading">
+            <h1>The Classic's Never Go Out Of Style...</h1>
+            <br>
+            <p>MOVIE'S FROM THE 80'S</p>
+            <br>
+        </div>  
+            
+	</div>
+    <div class="row">
+        <div class="col-md-12">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Use your Jedi Mind Tricks and guess this movie title:</h3>
+		</div>
+		<div class="panel-body">
+			<h2 id="movieToGuess">_ _ _ _ _ _ _</h2>
+		</div>
+	</div>
+</div>
+</div>
+    <div class="row">
+        <div class="guesses">
+        <div class="col-md-6">
+	<div class="panel panel-body">
+	 	<div class="panel-body">
+	 		Wrong Guesses: <span id="wrongGuesses"></span>
+		</div>
+	</div>
+</div>	
+	<div class="panel panel-body">
+        <div class="col-md-6">
+		<div class="panel-body">
+			Guesses Left: <span id="numGuesses"></span>
+		</div>
+	</div>
+</div>	
+</div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Win Counter: <span id="winCounter">0</span>
+		</div>
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Loss Counter:  <span id="lossCounter">0</span>
+		</div>
+	</div>
+</div>	
+</div>
+</div>	
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
